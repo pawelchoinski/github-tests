@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.pwl'
@@ -9,11 +10,24 @@ repositories {
     mavenCentral()
 }
 
+
+
+test {
+    useTestNG()
+    scanForTestClasses = false
+    include '**/*'
+
+    beforeTest { descriptor ->
+        logger.lifecycle("Gradle running test: ${descriptor}")
+    }
+}
 dependencies {
     //testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'org.testng', name: 'testng', version: '7.3.0'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.3'
+    compile group: 'com.google.guava', name: 'guava', version: '30.1-jre'
 
 
 }
+applicationDefaultJvmArgs = ["-Dtestng.dtd.http=true"]
