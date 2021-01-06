@@ -16,7 +16,7 @@ test {
     useTestNG()
     scanForTestClasses = false
     include '**/*'
-
+    systemProperty 'testng.dtd.http', System.getProperty('true')
     beforeTest { descriptor ->
         logger.lifecycle("Gradle running test: ${descriptor}")
     }
