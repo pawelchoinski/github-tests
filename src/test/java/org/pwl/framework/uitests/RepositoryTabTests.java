@@ -1,4 +1,4 @@
-package org.pwl.framework;
+package org.pwl.framework.uitests;
 
 import static org.testng.Assert.assertEquals;
 

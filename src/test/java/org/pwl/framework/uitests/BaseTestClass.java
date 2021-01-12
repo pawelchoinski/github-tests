@@ -1,6 +1,7 @@
-package org.pwl.framework;
+package org.pwl.framework.uitests;
 
 import org.openqa.selenium.WebDriver;
+import org.pwl.framework.DriverFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
