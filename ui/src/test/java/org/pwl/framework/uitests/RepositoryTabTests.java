@@ -1,10 +1,12 @@
 package org.pwl.framework.uitests;
 
+import static org.testng.Assert.*;
 import static org.testng.Assert.assertEquals;
 
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RepositoryTabTests extends BaseTestClass {

@@ -1,1 +1,5 @@
 rootProject.name = 'github-tests'
+include 'ui'
+include 'webapi'
+include 'common'
+

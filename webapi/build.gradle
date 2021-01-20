@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':common')
+    testCompile testingDependencies.restassured
+    compile generalDependencies.jackson
+    testCompile testingDependencies.harmcrest
+}

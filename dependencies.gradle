@@ -1,0 +1,21 @@
+ext {
+    guavaVersion = '30.1-jre'
+    jacksonVersion = '2.12.1'
+    generalDependencies = [
+            guava : "com.google.guava:guava:$guavaVersion",
+            jackson : "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    ]
+
+    testNgVersion = '7.3.0'
+    restassuredVersion = '4.3.3'
+    seleniumVersion = '3.141.59'
+    harmcrestVersion = '2.2'
+    testingDependencies = [
+            testNg :  "org.testng:testng:$testNgVersion",
+            restassured : "io.rest-assured:rest-assured:$restassuredVersion",
+            selenium : "org.seleniumhq.selenium:selenium-java:$seleniumVersion",
+            harmcrest : "org.hamcrest:hamcrest:$harmcrestVersion"
+    ]
+
+
+}
